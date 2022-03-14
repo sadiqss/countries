@@ -31,11 +31,12 @@ const displayCountries = countries => {
     `
 } */
 // option 2
-const getCountryHTML = ({ name, flags }) => {
-
+const getCountryHTML = ({ name, flags, area, region }) => {
     return `
     <div class='country'>
     <h2>${name}</h2>
+    <p> Area:${area}<p>
+    <p> Conitnent:${region}<p>
     <img src="${flags.png}">
     </div>
     `
